@@ -15,7 +15,7 @@ export class ProductListComponent {
     "description": "15 gallon capacity rolling garden cart",
     "price": 32.99,
     "starRating": 4.2,
-    "imageUrl": "https://openclipart.org/image/300px/sv"
+    "imageUrl": "./assets/images/garden_cart.png"
   },
   {
   "productId" : 2,
