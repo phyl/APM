@@ -44,9 +44,12 @@
           [style.margin.px] = 'imageMargin'>
         </td>
         <td>{{product.productName }}</td>
-        <td>{{product.productCode }}</td>
+        <td>{{product.productCode | lowercase }}</td>
         <td>{{product.releaseDate }}</td>
-        <td>{{product.price }}</td>
+        <!-- currency will always throw 2 digits and $ by default
+        and if the figures afta the decimal are > 2,it
+        rounds off -->
+        <td>{{product.price | currency : "USD":'symbol':'1.2-2' }}</td>
         <td>{{product.starRating }}</td>
       </tr>
 
